@@ -1,0 +1,11 @@
+{
+  "name": "sdkman-its-a-bird",
+  "version": "1.0.0",
+  "description": "It's a Bird. It's a Plane. No, it's SDKMAN!",
+  "main": "index.js",
+  "author": "Marco Vermeulen",
+  "license": "ISC",
+  "dependencies": {
+    "asciidoctor-reveal.js": "^2.0.0"
+  }
+}
