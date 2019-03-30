@@ -1,19 +1,31 @@
+[%notitle]
+:imagesdir: images
+:revealjs_theme: sky
+:revealjs_transition: fade
+
+=== Greach
+image::greach.png[canvas, size=contain]
+
 == It's a bird... It's a plane... It's...
 
 [%notitle]
 === SDKMAN!
-image::sdkman.svg[canvas, size=cover]
+image::sdkman.svg[canvas, size=auto]
 
 == About Me
 
 *Marco Vermeulen*
 
 * Polyglot & JVM Enthusiast
-* Using Kotlin, Scala, Groovy, Java and Go
+* Using Kotlin, Java, Groovy, Scala and Go
 * Consulting in London & Barcelona
 * Working with https://codurance.com[Codurance] at https://shop.mango.com[Mango]
 * Creator of https://sdkman.io[SDKMAN!]
 * Twitter https://twitter.com/marc0der[@marc0der]
+
+[%notitle]
+=== Codurance
+image::codurance.jpg[canvas, size=contain]
 
 == About the Talk
 
@@ -26,33 +38,6 @@ image::sdkman.svg[canvas, size=cover]
 * Future
 
 == DEMO!!!
-
-== Itchy Scratchy
-image::itchy.jpg[canvas, size=cover]
-
-=== Itch
-
-[%step]
-* Working with many SDKs
-* Downloading SDKs
-* Extracting SDKs
-* Manage many `_HOME` variables
-* Adding these to `PATH`
-* Simlinks to switch versions
-* A Mundane Task!
-* *A Pain in the Ass!!*
-
-=== Scratch
-
-[%step]
-* An SDK Manager
-* Install multiple Candidates
-* Multiple Versions per Candidate
-* Performs Downloads
-* Deals with Archives
-* Handle `_HOME` and `PATH` variables
-* Always up to date
-* Runs anywhere
 
 == SDK WTF?
 image::package.jpg[canvas, size=cover]
@@ -102,13 +87,41 @@ spring-2.1.3.RELEASE
 === What is a Package?
 
 [%step]
-* artifact: `.deb`, `.rpm`, `.dmg`, `.pkg`, `.exe`
+* artifact: `.deb`, `.rpm`, `.dmg`, `.pkg`, `.msi`, `.exe`
 * complex folder structure
 * internal descriptors, scripts
 * custom for distro, platform
 * external dependencies
 
 === Package or SDK Manager?
+
+[%notitle]
+== Itchy Scratchy
+image::itchy.png[canvas, size=auto]
+
+=== Itch
+
+[%step]
+* Working with many SDKs
+* Downloading SDKs
+* Extracting SDKs
+* Manage many `_HOME` variables
+* Adding these to `PATH`
+* Simlinks to switch versions
+* A Mundane Task!
+* *A Pain in the Ass!!*
+
+=== Scratch
+
+[%step]
+* An SDK Manager
+* Install multiple Candidates
+* Multiple Versions per Candidate
+* Performs Downloads
+* Deals with Archives
+* Handle `_HOME` and `PATH` variables
+* Always up to date
+* Runs anywhere
 
 == Command Line Interface
 image::cli.jpg[canvas, size=cover]
@@ -122,7 +135,7 @@ image::cli.jpg[canvas, size=cover]
 
 === Bash Client: Bootstrap 
 
-.~/.bash_profile
+.~/.bashrc
 [source,bash]
 ----
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
@@ -173,24 +186,28 @@ function sdk {
   CONVERTED_CMD_NAME=$(echo "$COMMAND" | tr '-' '_') 
   if [ -n "$CMD_FOUND" ]; then                    
     # It's available as a shell function          
-    __sdkman_"$CONVERTED_CMD_NAME" "$QUALIFIER" "$3" "$4"
+    __sdk_"$CONVERTED_CMD_NAME" "$QUALIFIER" "$3" "$4"
   fi
 }   
 ----
 
 
-[background-video="quicksand.mp4",background-video-loop=true,background-video-muted=true]
+[%notitle]
 === Looks good, but it's like building on Quicksand!
+image::quicksand.jpg[canvas, size=cover]
 
-=== Why use Go instead?
+=== Why use Native instead?
 [%step]
 * Consistent behaviour
-* Native (LLVM)
+* Runs on LLVM
 * Multi platform
 * No dependencies _at all_
 * Powerful standard libs
 
-== Backend Architecture
+== The Backend
+image::backend.jpg[canvas, size=cover]
+
+=== Backend Architecture
 
 * Microservices
 * Docker
@@ -221,7 +238,11 @@ function sdk {
 * https://github.com/sdkman/sdkman-vendor-maven-plugin[SDKMAN Vendor MVN Plugin]
 * https://github.com/sdkman/sdkman-db-migrations[Database Migrations]
 
+[%notitle]
 == Contributing
+image::uncle-sam.jpg[canvas, size=contain]
+
+=== Contributing
 
 * https://trello.com/b/mQLHVahc/sdkman-dev-board[Trello Board]
 * https://github.com/sdkman/sdkman-cli/issues[Github Issues]
@@ -229,29 +250,28 @@ function sdk {
 * https://gitter.im/sdkman/user-issues[Gitter user-issues]
 * https://github.com/sdkman/sdkman-db-migrations[Database Migrations]
 
+[%notitle]
 == What does the future hold?
+image::future.jpg[canvas, size=contain]
 
-=== Go Rewrite
+=== Native Rewrite
 
-[%step]
 * bash wrapper
 * small iterations
 * use cucumber features
 * fully feature compliant
-* Go CLI will speak JSON
+* Native CLI will speak JSON
 * release v3 JSON API
 * offline by default! (like apt or git)
 
 === Java Candidate
 
-[%step]
 * custom list view
 * JVM vendor namespace
 * hooks backend migrate to Go CLI?
 
 === New Features
 
-[%step]
 * Official Docker images (https://github.com/sdkman/sdkman-cli/issues/375[Issue #375])
 * Major version alias (https://github.com/sdkman/sdkman-cli/issues/603[Issue #603])
 * System installation fallback (https://github.com/sdkman/sdkman-cli/issues/673[Issue #673])
@@ -262,3 +282,11 @@ function sdk {
 == Thank You!
 
 == Q & A
+
+[%notitle]
+== Feedback
+
+image::evaluation_qr.png[]
+
+Please provide your Feedback!
+https://greach.contestia.es
