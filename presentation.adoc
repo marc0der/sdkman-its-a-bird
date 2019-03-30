@@ -36,6 +36,7 @@ image::codurance.jpg[canvas, size=contain]
 * Vendoring
 * Contribution
 * Future
+* http://bit.ly/sdkman-its-a-bird
 
 == DEMO!!!
 
