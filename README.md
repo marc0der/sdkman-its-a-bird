@@ -6,6 +6,7 @@ They are written using Asciidoc, and can be rendered to to html in Reveal.js usi
 
 Check out the project and run the following:
 
+    npm install
     node asciidoctor-reveal.js
 
 This will produce a _presentation.html_ file.
