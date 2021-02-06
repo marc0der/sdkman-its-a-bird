@@ -3,8 +3,8 @@
 :revealjs_theme: sky
 :revealjs_transition: fade
 
-=== Greach
-image::greach.png[canvas, size=contain]
+=== FOSDEM
+image::fosdem.jpg[Fosdem,width=300]
 
 == It's a bird... It's a plane... It's...
 
@@ -17,15 +17,11 @@ image::sdkman.svg[canvas, size=auto]
 *Marco Vermeulen*
 
 * Polyglot & JVM Enthusiast
-* Using Kotlin, Java, Groovy, Scala and Go
-* Consulting in London & Barcelona
-* Working with https://codurance.com[Codurance] at https://shop.mango.com[Mango]
+* Using Kotlin, Scala, Java, Groovy
+* Working for Heimstaden
 * Creator of https://sdkman.io[SDKMAN!]
+* Co-author of Mannning's FP in Kotlin
 * Twitter https://twitter.com/marc0der[@marc0der]
-
-[%notitle]
-=== Codurance
-image::codurance.jpg[canvas, size=contain]
 
 == About the Talk
 
@@ -132,7 +128,7 @@ image::cli.jpg[canvas, size=cover]
 * Light weight
 * Fast startup (no Java)
 * Many platforms (OSX, Linux, Cygwin, Solaris, BSD)
-* No dependencies (only Curl, Zip)
+* No dependencies (only curl, zip, gzip, tar)
 
 === Bash Client: Bootstrap 
 
@@ -245,49 +241,11 @@ image::uncle-sam.jpg[canvas, size=contain]
 
 === Contributing
 
-* https://trello.com/b/mQLHVahc/sdkman-dev-board[Trello Board]
+* https://slack.sdkman.io[Slack]
 * https://github.com/sdkman/sdkman-cli/issues[Github Issues]
 * https://github.com/sdkman/sdkman-cli/blob/master/CONTRIBUTING.md[Contributor Guidelines]
-* https://gitter.im/sdkman/user-issues[Gitter user-issues]
 * https://github.com/sdkman/sdkman-db-migrations[Database Migrations]
-
-[%notitle]
-== What does the future hold?
-image::future.jpg[canvas, size=contain]
-
-=== Native Rewrite
-
-* bash wrapper
-* small iterations
-* use cucumber features
-* fully feature compliant
-* Native CLI will speak JSON
-* release v3 JSON API
-* offline by default! (like apt or git)
-
-=== Java Candidate
-
-* custom list view
-* JVM vendor namespace
-* hooks backend migrate to Go CLI?
-
-=== New Features
-
-* Official Docker images (https://github.com/sdkman/sdkman-cli/issues/375[Issue #375])
-* Major version alias (https://github.com/sdkman/sdkman-cli/issues/603[Issue #603])
-* System installation fallback (https://github.com/sdkman/sdkman-cli/issues/673[Issue #673])
-* Per project SDK configuration (https://github.com/sdkman/sdkman-cli/issues/683[Issue #683])
-* Offer available version when version ommitted (https://github.com/sdkman/sdkman-cli/issues/689[Issue #689])
-* Clean up commands (https://github.com/sdkman/sdkman-cli/issues/688[Issue #688])
 
 == Thank You!
 
 == Q & A
-
-[%notitle]
-== Feedback
-
-image::evaluation_qr.png[]
-
-Please provide your Feedback!
-https://greach.contestia.es
